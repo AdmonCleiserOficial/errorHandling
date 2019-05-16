@@ -1,0 +1,54 @@
+<app-header></app-header>
+
+<<<<<<< HEAD
+<!-- ESTE ES EL LOGIN -->
+=======
+<!-- ESTE ES EL LOGIN -->
+>>>>>>> 8c319bbdcbbf47892c6d7b9df2eb2b888642c6d3
+<!-- fin menu -->
+<br>
+<br><br><br>
+<div class="fondo img-fluid"></div>
+<div class="row ">
+  <div class="col-12">
+    <!-- Login Form -->
+    <form (submit)="go()" class="animate heartBeat">
+      <h1>Admón Kmegavisión</h1>
+      <img class="img fadeIn hvr-bob" src="/assets/Imagenes/avatar.png" alt=""><br>
+      <input type="text" class="" name="usuario" [(ngModel)]="usuario" placeholder="nombre de usuario">
+      <input type="text" class="" name="clave" [(ngModel)]="clave" placeholder="Pasword"><br>
+
+      <input type="submit" value="Iniciar Sesión" id="Ingresar" class="fadeIn hvr-bounce-in mt-3">
+    </form>
+    <div class="inform">
+        <h3 class="animated bounceInUp delay-2s"></h3>
+        <br>
+        <p class="animated bounceInRight delay-2s ml-2  text-dark "></p>
+        <br>
+        <p class="animated bounceInRight delay-2s ml-2 text-dark  "></p>
+        <br>
+    </div>
+  </div>
+</div>
+<ngx-loading [show]="loading" [config]="{
+    animationType: ngxLoadingAnimationTypes.circleSwish,
+    primaryColour: primaryColour,
+    secondaryColour: secondaryColour,
+    fullScreenBackdrop: fullscreenloadingdecision,
+    backdropBorderRadius: radio,
+    backdropBackgroundColour: colorback
+  }" [template]="loadingTemplate"></ngx-loading>
+<b></b>
+<br>
+<p></p>
+
+  <footer>
+    &copy;2019 Todos los derechos estan reservados por kmegavisión.
+  <a
+    target="_blank"
+    href="https://www.facebook.com/CleiserBusinessGroupSAS/"
+    ></a
+  >
+  
+  </footer>
+
